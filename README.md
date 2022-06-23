@@ -1,38 +1,41 @@
-# Nome do projeto
-<imagem do projeto>
+# Detecção de fraudes em transações bancárias *(Work In Progress)*
+
+![fraud_detection_logo.jpeg](./images/fraud_detection_logo.jpeg)
 
 # 1. Questão de negócio
+A **Alura Data Solutions** (empresa fictícia) é uma startup de consultoria que desenvolve soluções de dados para outras empresas.
 
+A startup trabalha com diversos projetos em ciência de dados e busca diversificar seus clientes, inclusive, trazer soluções para negócios que passam por situações de fraude, por exemplo, bancos ou comércios que enfrentam esse tipo de problema.
 
+Para atrair clientes que precisam resolver situações de fraude, o time de Ciência de Dados teve a ideia de desenvolver um [Pipeline](https://acervolima.com/o-que-e-pipeline-de-ciencia-de-dados/) de solução para este tipo de problema para ficar disponível no portfólio da startup.
 
 ## 1.1 Desafio
 
-Como Cientista de Dados, o meu objetivo é responder as seguintes perguntas:
+Como Cientista de Dados, o meu objetivo é responder a seguinte pergunta:
 
-1. **questão de negócio**
+1. **Como diminuir as fraudes nas transações de um banco?**
 
 # 2. Premissas de negócio
 
 
 # 3. Planejamento da solução
-
 ## 3.1 Entendimento do negócio:
 
-- **Qual é a propensão de contratação do seguro de automóvel de cada cliente?**
+- **Como diminuir as fraudes nas transações de um banco?**
     - **Qual é a motivação?** <br>
-    
+    A startup Alura Data Solutions busca atrair e diversificar mais os seus clientes, então, surgiu a necessidade de ter no porfólio da consultoria uma solução contra fraudes.
 
     - **Qual é a causa raiz do problema?** <br>
-    
+    Demonstrar expertise da startup, para este tipo de problema, para um mercado novo
 
     - **Quem é o dono do problema?** <br>
-   
+   Sócio da Startup
 
     - **Qual é o formato da solução?** <br>
-    **Granularidade**:  <br>
-    **Tipo de problema**:  <br>
-    **Potenciais métodos**:  <br>
-    **Produto final**:  
+    **Granularidade**: Score de propensão à fraude por cada transação<br>
+    **Tipo de problema**: Modelo de propensão <br>
+    **Potenciais métodos**: Algoritmos de Classificação <br>
+    **Produto final**:  TBD, planilha csv com score de cada transação
 
 ## 3.2 Processo
 ### 3.2.1 Estratégia da solução
@@ -78,8 +81,8 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 - Comparação das métricas entre os modelos aplicados
 - Escolha do algoritmo
 
-**8 OTIMIZAÇÃO DOS HIPERPARÂMETROS**
-- 
+**8 OTIMIZAÇÃO DOS HIPERPARÂMETROS** 
+- <detalhar>
 
 **9 PERFORMANCE DO MODELO NO NEGÓCIO**
 - Respostas das questões de negócio
@@ -87,28 +90,32 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 - Tradução da performance do modelo em resultados financeiros
 
 **10 DEPLOYMENT DO MODELO**
-- 
+- <detalhar>
 
 ## 3.3 Ferramentas
 Quais ferramentas serão utilizadas no processo?
 - Python, Numpy, Pandas, Matplotlib, Seaborn
 - Anaconda, VSCode, Jupyter Notebook
 - Git, GitHub
+- Algoritmos de Classificação
+- Excel
 
 ## 3.4 Dataset
-Para responder a pergunta do <dono do problema>, foi utilizado um *dataset* público disponível no [Kaggle](<fonte de dados>) com informações sobre a <nome da empresa>.
+Será trabalhado com um Storytelling de um banco que conta com um sistema de cadastro dos clientes e aconteceram alguns casos de fraude. Esses dados são públicos e se encontram [Kaggle](https://www.kaggle.com/datasets/gopalmahadevan/fraud-detection-example).
 
 | Variável | Definição |
 | --- | --- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-
+| step  | Unidade do tempo (1 hour) |
+| type  | CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER |
+| amount | Valor da transação pela moeda local |
+| nameOrig  | Origem da transação |
+| oldbalanceOrg | Balanço inicial (antes da transação) |
+| newbalanceOrig | Novo balanço (após a transação) |
+| nameDest | Destino da transação |
+| oldbalanceDest  | Balanço inicial (antes da transação) |
+| newbalanceDest | Novo balanço (após a transação) |
+| isFraud  | O fraudador assume o controle das contas dos clientes e tenta esvaziá-las transferindo para outra conta e depois sacando |
+| isFlaggedFraud | Tentativa ilegal de transferência de uma quantia muito alta em uma única transação |
 
 # 4. Mapa mental de hipóteses
 <imagem mapa mental de hipóteses>
@@ -116,7 +123,7 @@ Para responder a pergunta do <dono do problema>, foi utilizado um *dataset* púb
 Na etapa de EDA, foram gerados alguns insights ao time de negócio através da validação das hipóteses levantadas.
 
 ## 4.1 Top 3 insights do negócio
-1. ****
+1. **<Hn>**
 **FALSA** 
 Insight: 
 
@@ -128,7 +135,6 @@ Insight:
 Na etapa de Machine Learning, foram utilizados <quantidade algoritmos> algoritmos <tipo do algoritmo> diferentes: <nome dos algortimos>. Para avaliação do modelo <método de avaliação da performance dos modelos>.
 
 * **<nome do modelo>**
-
 
 * **<comparação dos modelos>** 
 
@@ -171,7 +177,7 @@ Este foi o primeiro ciclo do método CRISP-DS para o problema da <nome do proble
 
 # 9. Referências
 
-- Este projeto é um desafio da [](<citar a inspiração do desafio>).
-- O conjunto de dados foi coletado no [Kaggle](<fonte de dados>).
+- Este projeto é um desafio da [Alura](https://cursos.alura.com.br/course/modelos-preditivos-dados-deteccao-fraude).
+- O conjunto de dados foi coletado no [Kaggle](https://www.kaggle.com/datasets/gopalmahadevan/fraud-detection-example).
 
 
