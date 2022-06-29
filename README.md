@@ -44,7 +44,7 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 ![ciclo_crisp_ds.jpg](./images/ciclo_crisp_ds.jpg)
  
  **1 DESCRIÇÃO DOS DADOS**
-- Coleta dos dados <local da coleta>
+- Coleta dos dados do [Kaggle](https://www.kaggle.com/datasets/gopalmahadevan/fraud-detection-example) via csv
 - Entendimento do significado de cada atributo da base de dados
 - Renomeação das colunas, entendimento da dimensão e tipo dos dados
 - Tratamento de dados nulos
@@ -75,14 +75,14 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 - Seleção dos melhores atributos para treinar os modelos de machine learning
 
 **7 MODELOS DE MACHINE LEARNING**
-- Aplicação dos algoritmos de classficação: <algoritmos utilizados>
+- Aplicação dos algoritmos de classficação: --algoritmos utilizados--
 - Validação cruzadada dos algoritmos
 - Mensuração de performance dos modelos
 - Comparação das métricas entre os modelos aplicados
 - Escolha do algoritmo
 
 **8 OTIMIZAÇÃO DOS HIPERPARÂMETROS** 
-- <detalhar>
+- --detalhar--
 
 **9 PERFORMANCE DO MODELO NO NEGÓCIO**
 - Respostas das questões de negócio
@@ -90,7 +90,7 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 - Tradução da performance do modelo em resultados financeiros
 
 **10 DEPLOYMENT DO MODELO**
-- <detalhar>
+- --detalhar--
 
 ## 3.3 Ferramentas
 Quais ferramentas serão utilizadas no processo?
@@ -105,38 +105,38 @@ Será trabalhado com um Storytelling de um banco que conta com um sistema de cad
 
 | Variável | Definição |
 | --- | --- |
-| step  | Unidade do tempo (1 hour) |
-| type  | CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER |
-| amount | Valor da transação pela moeda local |
-| nameOrig  | Origem da transação |
+| step  | Mapeia uma unidade de tempo no mundo real. Neste caso, 1 passo é 1 hora de tempo. Total de etapas 744 (simulação de 30 dias) |
+| type  | CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER. (caixa-de-entrada, caixa-de-saida, débito, pagamento e transferência) |
+| amount | Valor da transação em  moeda local |
+| nameOrig  | Cliente origem da transação |
 | oldbalanceOrg | Balanço inicial (antes da transação) |
 | newbalanceOrig | Novo balanço (após a transação) |
-| nameDest | Destino da transação |
+| nameDest | Cliente destinatário da transação |
 | oldbalanceDest  | Balanço inicial (antes da transação) |
 | newbalanceDest | Novo balanço (após a transação) |
 | isFraud  | O fraudador assume o controle das contas dos clientes e tenta esvaziá-las transferindo para outra conta e depois sacando |
 | isFlaggedFraud | Tentativa ilegal de transferência de uma quantia muito alta em uma única transação |
 
 # 4. Mapa mental de hipóteses
-<imagem mapa mental de hipóteses>
+--imagem mapa mental de hipóteses--
 
 Na etapa de EDA, foram gerados alguns insights ao time de negócio através da validação das hipóteses levantadas.
 
 ## 4.1 Top 3 insights do negócio
-1. **<Hn>**
+1. **--Hn--**
 **FALSA** 
 Insight: 
 
-<imagem do gráfico que valida ou invalida hipótese>
+--imagem do gráfico que valida ou invalida hipótese--
 
 
 # 5. Aplicação dos algoritmos de Machine Learning e métricas
 
-Na etapa de Machine Learning, foram utilizados <quantidade algoritmos> algoritmos <tipo do algoritmo> diferentes: <nome dos algortimos>. Para avaliação do modelo <método de avaliação da performance dos modelos>.
+Na etapa de Machine Learning, foram utilizados --quantidade algoritmos-- algoritmos -tipo do algoritmo-- diferentes: --nome dos algortimos--. Para avaliação do modelo --método de avaliação da performance dos modelos--.
 
-* **<nome do modelo>**
+* **--nome do modelo--**
 
-* **<comparação dos modelos>** 
+* **--comparação dos modelos--** 
 
 | Model Name | métrica 1 | métrica-n |
 | --- | --- | --- |
@@ -145,35 +145,35 @@ Na etapa de Machine Learning, foram utilizados <quantidade algoritmos> algoritmo
 |  |  |  | 
 |  |  |  | 
 
-<interpretração das métricas>
+--interpretração das métricas--
 
-<melhores algoritmos>
+--melhores algoritmos--
 
-<escolha do algoritmo>
+--escolha do algoritmo--
 
-<aplicação da otimização dos hiperparâmetros>
+--aplicação da otimização dos hiperparâmetros--
 
-<novo resultado do modelo>
+--novo resultado do modelo--
 
 # 6. Resultados do negócio
 Definido o modelo, é possível responder as questões de negócio, criar alguns cenários e estimar o benefício de seguir a solução proposta por esse projeto.
 
-* <premissas para cálculo do benefício>
+* --premissas para cálculo do benefício--
 
-## **<cenários>**:
+## **--cenários--**:
 
-<conclusão>
+--conclusão--
 
-# 7. <como o modelo foi colocado em produção>
+# 7. --como o modelo foi colocado em produção--
 
-## <nome do método>
+## --nome do método--
 
 # 8. Próximos passos
-Este foi o primeiro ciclo do método CRISP-DS para o problema da <nome do problema>, foi possível passar por todas as etapas de um projeto completo de Ciência de Dados e entregar valor ao negócio. 
+Este foi o primeiro ciclo do método CRISP-DS para o problema da Alura Data Solutions, foi possível passar por todas as etapas de um projeto completo de Ciência de Dados e entregar valor ao negócio. 
 
 * O que pode ser feito no próximo ciclo?
     -
-- <listar o que será feito no próximo ciclo>
+- --listar o que será feito no próximo ciclo--
 
 # 9. Referências
 
